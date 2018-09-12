@@ -473,7 +473,7 @@ int zmop_init(int iz, char *name, int ch) {
 	}
 	//Set init values
 	zmops[iz].n_data=0;
-	zmops[iz].midi_channel=-1;
+	zmops[iz].midi_channel=ch;
 	zmops[iz].n_connections=0;
 	return 1;
 }
