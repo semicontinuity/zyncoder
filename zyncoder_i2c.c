@@ -339,6 +339,7 @@ void handleRibanHwc() {
     //loop until all HWC changes are read
     int i;
     uint8_t reg;
+printf("INT!!!\n");
     while(reg = wiringPiI2CRead(hwci2c_fd)) {
         int16_t nValue = wiringPiI2CReadReg16(hwci2c_fd, reg);
         for(i=0; i<MAX_NUM_ZYNCODERS; i++) {
